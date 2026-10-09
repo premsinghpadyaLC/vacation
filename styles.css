@@ -3082,3 +3082,79 @@ footer {
     font-size: 7px;
   }
 }
+
+
+
+/* FINAL COUNTDOWN OVERFLOW FIX — ADD AT THE VERY END */
+
+.countdown-section {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+
+  width: calc(100% - 32px) !important;
+  max-width: 700px !important;
+  min-width: 0 !important;
+
+  margin: 28px auto !important;
+  padding: clamp(12px, 2.5vw, 22px) !important;
+
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.countdown-timer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-wrap: nowrap !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  gap: clamp(3px, 1vw, 10px) !important;
+  box-sizing: border-box !important;
+}
+
+.countdown-unit {
+  flex: 1 1 0 !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 130px !important;
+}
+
+.flip-card {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.countdown-label {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  font-size: clamp(7px, 1.2vw, 11px) !important;
+  letter-spacing: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .countdown-section {
+    width: calc(100% - 24px) !important;
+    padding: 12px 6px !important;
+    margin: 20px auto !important;
+  }
+
+  .countdown-timer {
+    gap: 3px !important;
+  }
+
+  .countdown-unit {
+    max-width: none !important;
+  }
+
+  .countdown-label {
+    font-size: 7px !important;
+  }
+}

@@ -8,7 +8,6 @@ if (toggle && nav) {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  // Close the menu after selecting a section.
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
